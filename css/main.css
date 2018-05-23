@@ -28,15 +28,14 @@ body{
   max-width: 1110px;
   margin: 0px auto;       
 }
-/* header */
-/* .topHeader{
-} */
+/*/// header ///*/
+
 .topHeaderTop{
   background: #fff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(61, 51, 61, 0.58);
   -moz-box-shadow: 0px 1px 5px 0px rgba(61, 51, 61, 0.58);
   box-shadow:0px 1px 5px 0px rgba(61, 51, 61, 0.58);
-    padding: 15px 0 10px 0;
+  padding: 15px 0 10px 0;
   position: relative;
   z-index: 5;
 }
@@ -285,24 +284,25 @@ section.companyOleo{
 }
 .titleContent {
   position: absolute;
-  top: 0.5em;
-  left: 15rem;
+  left: 11em;
+  top: 0;
+  width: 35em;
 }
 .titleContent h4{
   font-family: 'OpenSans-Bold';
   font-size: 20px;
   color: #3157a3;
-  width: 26em;
+  /* width: 26em; */
 }
 .titleContent p{
   font-family: 'OpenSans-Regular';
   font-size: 20px;  
 }
 .offer p{
-  width: 25em;
+  /* width: 25em; */
 }
 .pride p{
-  width: 23em;
+  /* width: 23em; */
 }
 .companyAbout {
   overflow: hidden;
@@ -427,7 +427,6 @@ img.creamy {
   margin: 80px 0 70px 0;
 }
 .cakeRecipe{
-  /* overflow: hidden; */
   margin-bottom: 70px;
   position: relative;
 }
@@ -488,14 +487,17 @@ img.creamy {
   text-align: center;
 }
 .cookingTime h1{
-  font-family: 'OpenSans-Light';
+  font-family: 'OpenSans-Bold';
   color: #3157a3;
-  margin: 0;
+  line-height: 1;
+  font-size: 20px;
 }
 .cookingTime h5{
   font-family: 'OpenSans-Bold';
   font-size: 20px;
   margin: 0;
+  margin-top: 23px;
+  line-height: 1;
 }
 .cookingTime span{
   font-family: 'OpenSans-Light';  
@@ -522,4 +524,131 @@ h6.rightIngredient{
 .ingredients-btn {
   text-align: inherit;
   margin-top: 42px;
+}
+.cakeSlider{
+  text-align: center;
+  margin: 0 auto;
+  width: 630px;
+}
+.cakeSliderItem {
+  display: inline-block;
+  padding: 20px;
+}
+.slick-arrow {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+}
+i.fa.fa-chevron-circle-left.slick-arrow{
+  left: -40px;
+  top: 35%;
+}
+i.fa.fa-chevron-circle-right.slick-arrow{
+  right: -40px;
+  top: 35%;
+}
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+.allRecipes{
+  margin: 45px 0 50px 0;
+}
+.cakeSliderItem.slick-slide a:focus {
+  outline: none;
+}
+.clientsRecalls {
+  margin-bottom: 40px;
+}
+.recalls1 {
+  margin-bottom: 8rem;
+}
+.recallsTitle h1{
+  text-align: center;
+  color: #111;
+  font-size: 30px;
+  font-family: 'OpenSans-Bold';
+  margin: 90px 0 65px 0;
+}
+.recallText{
+  position: relative;
+  z-index: 5;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 22px 0 35px 22px;
+  height: 210px;
+}
+.recallText h4{
+  font-size: 20px;
+  line-height: 1.3;
+}
+.recallQuotes img{
+  position: absolute;
+  top: -1.3rem;
+}
+.recallPerson{
+  position: absolute;
+  bottom: -5rem;
+  left: 4rem;
+  z-index: 6;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 17px 45px 7px 34px;
+}
+.recallPerson h3{
+  line-height: .6;
+  margin: 0;
+  font-family: 'OpenSans-Bold';
+  font-size: 20px;
+  color: #3157a3;
+}
+.recalls1.col-md-6.slick-slide {
+  outline: none;
+}
+.slick-dots li button:before{
+  font-size: 35px;
+}
+.slick-track{
+  margin-top: 12px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ffc80a;
+  font-size: 55px;
+}
+/* /// Footer /// */
+.footerAddress {
+  margin: 25px 0 25px 0;
+}
+.oleoFoot{
+  background: #dcdcdc
+}
+.footerList{
+  margin-top: 35px;
+}
+.footerList ul{
+  display: inline-block;
+}
+.footerList ul li{
+  display: inline-block;
+  margin-right: 25px;
+  border-right: 1px solid #111;
+  line-height: .8;
+  padding-right: 25px;
+}
+.footerList ul li:last-child {
+  border-right: none;
+}
+.footerList ul li a{
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+}
+.companyFooticon {
+  vertical-align: 4px;
+}
+.companyFootaddress{
+  margin-right: 65px;
 }
