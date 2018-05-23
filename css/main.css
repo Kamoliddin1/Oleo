@@ -162,7 +162,7 @@ body{
   text-shadow: 0 1px 0 #000000;
 }
 .topHeaderList li a.active{
-  color: #ffe400;
+  color: #ffc80a;
 }
 .leftlist{
   float: right;
@@ -183,11 +183,15 @@ body{
   right: 0;
   bottom: 10%;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span {
   background: #ffc80a;
   width: 13px;
   height: 13px;
 }
+.owl-theme .owl-dots .owl-dot{
+  outline: none;
+}
+
 .hdContent{
   position: absolute;
   bottom: 40%;
