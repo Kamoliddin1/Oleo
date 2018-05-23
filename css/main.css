@@ -29,7 +29,9 @@ body{
   margin: 0px auto;       
 }
 /*/// header ///*/
-
+.topHeader {
+  position: relative;
+}
 .topHeaderTop{
   background: #fff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(61, 51, 61, 0.58);
@@ -37,7 +39,7 @@ body{
   box-shadow:0px 1px 5px 0px rgba(61, 51, 61, 0.58);
   padding: 15px 0 10px 0;
   position: relative;
-  z-index: 5;
+  z-index: 1000;
 }
 .topHeaderAddress{
   font-size: 17px;
@@ -140,7 +142,7 @@ body{
   left: 0;
   right: 0;
   top: 45px;
-  z-index: 4;
+  z-index: 999;
 }
 
 .topHeaderList{
@@ -165,21 +167,35 @@ body{
 .leftlist{
   float: right;
 }
+
+.hdCarousel {
+  position: relative;
+}
 .hdCarousel img{
   width: 100%;
 }
 .hdItem {
   position: relative;
 }
-
+.owl-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #ffc80a;
+  width: 13px;
+  height: 13px;
+}
 .hdContent{
   position: absolute;
-  bottom: 43%;
+  bottom: 40%;
   text-align: center;
   margin: 0 auto;
   left: 0;
   right: 0;
-  width: 630px;
+  width: 830px;
 }
 .hdContent h1{
   font-family: 'VAGRoundedBT-Regular','OpenSans-Bold';
@@ -187,6 +203,9 @@ body{
   color: #fff;
   position: relative;
   z-index: 5;
+  padding: 0 5%;
+  text-align: center;
+  margin-top: 10%;
 }
 .hdContent h1 span{
   text-transform: uppercase;
@@ -231,13 +250,20 @@ button.owl-next{
   font-size: 20px;
   border: none;
 }
-.wave{
+.wave {
   position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-top: -85px;
 }
-.wave img{
+.wave img {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  right: -1px;
   z-index: 5;
+  transform: rotate(180deg);
+  width: 100%;
 }
 button.owl-prev,
 button.owl-next:focus{
@@ -267,6 +293,45 @@ section.companyOleo{
   background-repeat: no-repeat;
   height: 72em;
 }
+
+.companyContent {
+  position: relative;
+}
+.rondedImg {
+  position: relative;
+  width: 53%;
+  z-index: 2;
+}
+.rondedImg img {
+  width: 100%;
+}
+
+.companyItems {
+  display: block;
+  width: 62%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.companyItems .comp-item {
+  position: relative;
+}
+.companyItems .comp-item + .comp-item {
+  margin-top: 60px;
+}
+.companyItems .comp-item.produce {
+  margin-top: 60px;
+  left: 10%;
+}
+.companyItems .comp-item.offer {
+  left: 18%;
+}
+.companyItems .comp-item.pride {
+  left: 10%;
+}
+
+/*
 .produce {
   position: absolute;
   top: 11rem;
@@ -282,6 +347,7 @@ section.companyOleo{
   top: 51rem;
   left: 62.5em;
 }
+*/
 .titleContent {
   position: absolute;
   left: 11em;
@@ -652,3 +718,4 @@ i.fa.fa-chevron-circle-right.slick-arrow{
 .companyFootaddress{
   margin-right: 65px;
 }
+
