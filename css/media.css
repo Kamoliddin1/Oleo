@@ -5,55 +5,31 @@
   .hdContent h1{
     font-size: 40px;
   }
+  .wave img {
+    top: 15px;
+  }
   .owl-dots{
     bottom: 15%;
   }
-  .companyContent{
-    margin-top: 7%;
-  }
-  .roundedContent {
-    position: relative;
-    left: 7%;
-  }
-  .rondedImg {
-    position: relative;
-    width: 43%;
-    z-index: 2;
-  }
   .titleContent {
-    width: 26em;
-    left: 8em;
-    top: -1em;
+    width: 85%;
   }
   .titleContent h4{
     font-size: 18px
   }
   .titleContent p{
     font-size: 16px
-  }
-  .produceImg img{
-    width: 15%;
-  }
-  .offerImg img{
-    width: 15%;
-  }
-  .prideImg img{
-    width: 15%;
-  }
-  .companyItems{
-    top: -12%;
-    right: 1%;
-  }
+  } 
   .companyItems .comp-item.produce {
-    margin-top: 60px;
-    left: -5%;
+    margin-top: 40px;
+    left: -14%;
   }
   .companyItems .comp-item.offer {
-    left: 3%;
+    left: -4%;
   }
   .companyItems .comp-item.pride {
-    left: -5%;
-  }
+    left: -14%;
+  } 
   section.companyOleo{
     margin-bottom: 0;
   }
@@ -63,6 +39,18 @@
   .companyAbout p{
     font-size: 18px;
   }
+  .companyAbout p span {
+    font-size: 18px;
+  }
+  .recallText h4{
+    font-size: 18px;
+  }
+  .recallPerson h3 {
+    font-size: 16px;
+  }
+  .recallPerson h4 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1200px){
   .topHeaderAddress h4{
@@ -71,12 +59,21 @@
   .topHeaderAddress h5 {
     font-size: 14px;
   }
+  .wave img {
+    top: 25px;
+  }
   .sailDepartmentSailing h4 {
     font-size: 15px;
   }
   .topHeaderList li{
     font-size: 14px;
     margin-right: 40px;
+  }
+  .topHeaderAddresses {
+    float: left;
+  }
+  .topHeaderAddressMapIcon {
+    margin-right: 10px;
   }
   .sailDepartmentSailing h5 {
     font-size: 15px;
@@ -105,6 +102,31 @@
   .companyBg{
     background-size: 26%;
   }
+  .produceImg img {
+    width: 85%;
+  }
+  .offerImg img {
+    width: 85%;
+  }
+  .prideImg img {
+    width: 85%;
+  }
+  .companyItems .comp-item.produce {
+    margin-top: 10px;
+    left: -18%;
+  }
+  .companyItems .comp-item.offer {
+    left: -6%;
+  }
+  .companyItems .comp-item.pride {
+    left: -16%;
+  }
+  .companyItems .comp-item + .comp-item {
+    margin-top: 40px;
+  }
+  .companyAbout {
+    margin-top: 5rem;
+  }
   .butter {
     text-align: center;
   }
@@ -113,6 +135,9 @@
   }
   .butterContent h5{
     margin: 15px auto;
+  }
+  .border-wrap{
+    float: none;
   }
   img.creamy{
     float: none;
@@ -125,6 +150,7 @@
   }
   .butterContent h4{
     width: auto;
+    margin-top: 10px;
   }
   .butterContent h5{
     width: 15%;
@@ -132,22 +158,19 @@
   .butterContent p{
     width: auto;
   }
-  .whyContentimg h5{
-    margin-left: 10%;
-  }
   .cakeimg {
     float: left;
     width: 48%;
     height: 502px;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
   }
   .cakeRecipeText {
-    min-height: 500px;
+    /* min-height: 500px; */
   }
-  .cookingTime{
-    width: 170px;
-    height: 170px;
+  .cookingTimeWrap{
+    top: 75%;
+    right: 42%;
   }
   .cookingTime h5{
     font-size: 16px;
@@ -163,12 +186,20 @@
   }
   .cakeRecipeTextContent h5{
     font-size: 18px;
+    margin-bottom: 30px;
   }
   .ingredients h6{
     font-size: 16px;
   }
   .ingredients-btn h4{
     font-size: 14px;
+  }
+  .ingredients-btn {
+    margin: 50px 0 100px 0;
+    text-align: center;
+  }
+  .cookingTime h1{
+    font-family: 'OpenSans-Regular';
   }
   .products-btn a{
     padding: 13px 25px;
@@ -177,5 +208,248 @@
     height: auto;
   }
 }
-@media (max-width: 1024px){}
-@media (max-width: 991px){}
+@media (max-width: 1024px){
+  .topHeaderLogo {
+    top: -155px;
+    width: 310px;
+    height: 280px;
+  }
+  .topHeaderAddress h4 {
+    font-size: 14px;
+  }
+  .topHeaderAddress h5 {
+    font-size: 13px;
+  }
+  .sailDepartmentSailing h4 {
+    font-size: 14px;
+  }
+  .sailDepartmentSailing h5 {
+    font-size: 13px;
+  }
+  .lang h4{
+    font-size: 14px;
+  }
+  .topHeaderList li {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  .hdCarousel i.fa.fa-chevron-left,
+  .hdCarousel i.fa.fa-chevron-right{
+    padding: 15px;
+  }
+  .hdContent {
+    width: 360px;
+    bottom: 45%;
+  }
+  .hdContent h1 {
+    font-size: 25px;
+  }
+  .owl-dots {
+    bottom: 22%;
+  }
+  .roundedContent {
+    margin-top: 50px;
+  }
+  .company {
+    position: relative;
+    top: -30px;
+  }
+  .companyTitle h1{
+    font-size: 25px;
+  }
+  .companyBg {
+    background-size: 22%;
+  }
+  .titleContent {
+    width: 97%;
+  }
+  .titleContent p {
+    font-size: 15px;
+  }
+  .companyAbout p {
+    font-size: 15px;
+  }
+  .companyAbout p span {
+    font-size: 15px;
+  }
+  .companyAbout {
+    margin-top: 4rem;
+  }
+  .whyTitle h1{
+    font-size: 25px;
+  }
+  .whyContent h5{
+    font-size: 17px;
+  }
+  .recipesTitle h1{    
+    font-size: 25px;
+  }
+  .recallsTitle h1{    
+    font-size: 25px;
+  }
+}
+@media (max-width: 991px){
+  .topHeaderAddressMapIcon {
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+  .topHeaderAddresses {
+    float: left;
+    width: 175px;
+  }
+  .companyTitle h1 {
+    font-size: 22px;
+  }
+  .produceImg img {
+    width: 65%;
+  }
+  .offerImg img {
+    width: 65%;
+  }
+  .prideImg img {
+    width: 65%;
+  }
+  .companyItems .comp-item + .comp-item {
+    margin-top: 40px;
+  }
+  .companyItems .comp-item.produce {
+    margin-top: 10px;
+    left: -19%;
+  }
+  .companyItems .comp-item.offer {
+    left: -6%;
+  }
+  .companyItems .comp-item.pride {
+    left: -19%;
+  }
+  .titleContent {
+    width: 115%;
+  }
+  .titleContent h4 {
+    font-size: 16px;
+  }
+  .titleContent p {
+    font-size: 13px;
+  }
+  .produceImg{
+    margin-right: -25px;
+  }
+  .offerImg{
+    margin-right: -25px;
+  }
+  .prideImg{
+    margin-right: -25px;
+  }
+  .companyAbout p{
+    font-size: 13px;
+  }
+  .companyAbout p span {
+    font-size: 13px;
+  }
+  .products-border{
+    padding: 30px 20px 15px 20px;
+  }
+  .butterContent h4 {
+    font-size: 18px;
+  }
+  .butterContent p {
+    font-size: 16px;
+  } 
+  .butterContent h5 {
+    width: 20%;
+  }
+  .productsButter {
+    margin-bottom: 10px;
+  }
+  .products-btn{
+    margin-top: 25px;
+  }
+  .products-btn h4{
+    font-size: 15px;
+  }
+  .whyTitle h1 {
+    font-size: 22px;
+    margin: 30px 0;
+  }
+  .whyContent h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .whyContentimg h5{
+    margin: 0 15px 20px 0;
+    font-size: 18px;
+  }
+  .recipesTitle {
+    margin: 30px 0;
+  }
+  .recipesTitle h1 {
+    font-size: 22px;
+  }
+  .cakeborder-wrap {
+    background-position: 280% 130%;
+    min-height: 100%
+  }
+  .cakeRecipeTextContent {
+    margin: 20px 0 0 20px;
+  }
+  .cakeRecipeTextContent h1 {
+    font-size: 18px;
+  }
+  .cakeRecipeTextContent h3 {
+    font-size: 15px;
+  }
+  .cakeRecipeTextContent h5 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .ingredients h6 {
+    font-size: 13px;
+  }
+  .ingredients-btn h4 {
+    font-size: 13px;
+  }
+  .cakeimg img {
+    width: 133%;
+  }
+  .ingredients-btn {
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+  .cookingTime h5 {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .cookingTime h1{
+    font-family: 'OpenSans-Regular';
+    margin-top: 5px;
+  }
+  .cookingTime span {
+    font-size: 50px;
+  }
+  .cookingTime {
+    padding: 0 10px;
+  }
+  .recallsTitle h1 {
+    font-size: 22px;
+    margin: 30px 0;
+  }
+  .recallText h4 {
+    font-size: 16px;
+  }
+  .recallPerson h3 {
+    font-size: 15px;
+  }
+  .footerList ul li a {
+    font-size: 14px;
+  }
+  .footerList ul li {
+    margin-right: 15px;
+    padding-right: 15px;
+  }
+  .companyFooticon {
+    margin-top: 5px;
+  }
+  .slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+}

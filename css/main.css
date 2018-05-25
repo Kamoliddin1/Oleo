@@ -1,6 +1,3 @@
-.icon-instagram-logo:before {
-  content: "\e900";
-}
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -31,6 +28,9 @@ body{
   max-width: 1110px;
   margin: 0px auto;       
 }
+.row{
+  margin: auto
+}
 /*/// header ///*/
 .topHeader {
   position: relative;
@@ -58,12 +58,12 @@ body{
   font-size: 16px;
 }
 .topHeaderAddressMapIcon{
-  display: inline-block;
-  vertical-align: 12px;
-  margin-right: 10px;
+  margin-top: 10px;
+  float: left;
+  /* margin-right: 10px; */
 }
 .topHeaderAddresses{
-  display: inline-block;
+  float: right;
 }
 .topHeaderLogo{
   margin: 0 auto;
@@ -134,18 +134,17 @@ body{
 }
 .IconSet{
   display: inline-block;
-  margin: 10px 4px;
+  margin: 15px 4px;
 }
 .topHeaderBottom{
   background: url(../img/treeBg.png) no-repeat;
   background-size: cover;
   overflow: hidden;
-  margin-top: -30px;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 45px;
+  top: 50px;
   z-index: 999;
 }
 
@@ -282,7 +281,7 @@ button.owl-next{
   right: -1px;
   z-index: 5;
   transform: rotate(180deg);
-  width: 100%;
+  width: 101%;
 }
 button.owl-prev,
 button.owl-next:focus{
@@ -310,53 +309,66 @@ section.companyOleo{
   background-image: url(../img/bg3.png) ,url(../img/bg4.png);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
-  height: 72em;
+  /* height: 72em; */
   margin-top: -10rem;
   position: relative;
   z-index: 10;
 }
 
 .companyContent {
-  position: relative;
+  /* position: relative; */
+}
+.roundedContent {
+  overflow: hidden;
 }
 .rondedImg {
   position: relative;
-  width: 53%;
+  width: 50%;
   z-index: 2;
+  float: left;
 }
 .rondedImg img {
   width: 100%;
 }
 
 .companyItems {
-  display: block;
-  width: 62%;
   position: absolute;
-  top: 0;
   right: 0;
+  display: block;
+  width: 50%;
+  float: left;
   z-index: 3;
 }
 .companyItems .comp-item {
   position: relative;
 }
 .companyItems .comp-item + .comp-item {
-  margin-top: 60px;
+  margin-top: 75px;
 }
 .companyItems .comp-item.produce {
-  margin-top: 60px;
-  left: 10%;
+  margin-top: 40px;
+  left: -10%;
 }
 .companyItems .comp-item.offer {
-  left: 18%;
+  left: -3%;
 }
 .companyItems .comp-item.pride {
-  left: 10%;
+  left: -10%;
+}
+.produceImg {
+  float: left;
+  margin-right: 15px;
+}
+.offerImg {
+  float: left;
+  margin-right: 15px;
+}
+.prideImg {
+  margin-right: 15px;
+  float: left;
 }
 .titleContent {
-  position: absolute;
-  left: 11em;
-  top: 0;
-  width: 35em;
+  width: 69%;
 }
 .titleContent h4{
   font-family: 'OpenSans-Bold';
@@ -367,12 +379,6 @@ section.companyOleo{
 .titleContent p{
   font-family: 'OpenSans-Regular';
   font-size: 20px;  
-}
-.offer p{
-  /* width: 25em; */
-}
-.pride p{
-  /* width: 23em; */
 }
 .companyAbout {
   overflow: hidden;
@@ -407,17 +413,23 @@ section.OurProducts{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-img.creamy {
+.border-wrap {
   background: #fff;
-  padding: 50px 35px 45px 35px;
+  padding: 5px;
   border-radius: 10px;
-  outline: 1px dashed #ebe4db;
-  outline-offset: -10px;
   float: left;
 }
-img.creamy:hover {
+.products-border {
+  border: 1.5px dashed #e7dbc8;
+  border-radius: 10px;
+  padding: 45px 25px 35px 25px;
+}
+.products-border:hover {
   background: #fbc22b61;
   transition: .5s;
+}
+img.creamy {
+  padding: 5px;
 }
 .productsButter{
   margin-bottom: 50px;
@@ -486,6 +498,11 @@ img.creamy:hover {
   font-family: 'OpenSans-Regular';
   margin-bottom: 100px;
 }
+.whyContentimg {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
 .whyContentimg h5{
   text-align: center;
   color: #3157a3;
@@ -519,9 +536,9 @@ img.creamy:hover {
 .cakeimg img{
   width: auto;
   min-width: 100%;
-  min-height: 100%;
+  min-height: auto;
 }
-.cakeRecipeText {
+.cakeborder-wrap {
   background: #fff;
   min-height: 556px;
   width: 52%;
@@ -530,11 +547,13 @@ img.creamy:hover {
   -webkit-box-shadow: 0px 3px 36px -2px rgba(0, 0, 0, 0.48);
   -moz-box-shadow: 0px 3px 36px -2px rgba(0, 0, 0, 0.48);
   box-shadow: 0px 3px 36px -2px rgba(0, 0, 0, 0.48);
-  outline: 1px dashed #ebe4db;
-  outline-offset: -10px;
-  background-image: url('../img/cakebg.png');
-  background-position: 218em 213em;
+  background-image: url(../img/cakebg1.png);
+  background-repeat: no-repeat;
+  background-position: 135% 105%;
+  padding: 5px;
 }
+/* .cakeRecipeText {
+} */
 .cakeRecipeTextContent{
   margin: 35px 0 0 25px;
   color: #333;
@@ -559,10 +578,14 @@ img.creamy:hover {
   font-size: 20px;
   margin-top: 23px;
 }
-.cookingTime{
+.border {
+  border: 1.5px dashed #e7dbc8;
+  border-radius: 10px;
+}
+.cookingTimeWrap{
   background: #fff;
-  width: 220px;
-  height: 220px;
+  /* width: 220px;
+  height: 220px; */
   border-radius:10px; 
   position: absolute;
   top: -11%;
@@ -570,9 +593,11 @@ img.creamy:hover {
   -webkit-box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
   -moz-box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
   box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
-  outline: 1px dashed #ebe4db;
-  outline-offset: -10px;
   text-align: center;
+  padding: 5px;
+}
+.cookingTime{
+  padding: 0 20px;
 }
 .cookingTime h1{
   font-family: 'OpenSans-Bold';
@@ -611,23 +636,29 @@ h6.rightIngredient{
 }
 .ingredients-btn {
   text-align: inherit;
-  margin-top: 42px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 .cakeSlider{
   text-align: center;
   margin: 0 auto;
-  width: 630px;
-  height: 210px;
+  max-width: 630px; 
+  box-sizing: border-box;
+  height: 210px; 
 }
 .cakeSliderItem {
   display: inline-block;
-  padding: 20px;
 }
 .cakeSliderItem.slick-slide.slick-center img {
   border: 4px solid #FBC329;
   border-radius: 50%;
   transition: .5s
 }
+/* .cakeSliderItem.slick-current img{
+  border: 4px solid #FBC329;
+  border-radius: 50%;
+  transition: .5s
+} */
 
 .slick-initialized .slick-slide:focus {
   outline: none;
@@ -639,14 +670,13 @@ h6.rightIngredient{
 }
 img.slick-arrow{
   position: absolute;
+  top: 30%;
 }
 img.right-arrow.slick-arrow{
   right: -40px;
-  top: 40%;
 }
 img.left-arrow.slick-arrow{
   left: -40px;
-  top: 40%;
 }
 .slick-slide img {
   display: block;
@@ -751,6 +781,8 @@ img.left-arrow.slick-arrow{
 }
 .companyFooticon {
   vertical-align: 4px;
+  margin-right: 10px;
+  margin-top: 0;
 }
 .companyFootaddress{
   margin-right: 65px;
