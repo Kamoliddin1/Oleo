@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Компания "BARAKA FOOD"</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/logo.png" />
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -21,18 +21,25 @@
   <!-- slick -->
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
+<body class="menuCanvas">
   <div class="wrap">
     <section>
       <div class="topHeader">
-        <div class="topHeaderTop">
+        <i class="fa fa-times" id="exitmnu" aria-hidden="true"></i> 
+        <div class="topHeaderTop animated zoomIn">
           <div class="container1">
             <div class="row">
+              <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>menu</p>
+              </div>
               <div class="topHeaderAddress col-md-4 col-sm-4">
                 <div class="topHeaderAddressMapIcon">
                   <img src="img/map.png" alt="">
@@ -42,10 +49,10 @@
                   <h5>ул. Фазилтепа 11, Ташкент, Узбекистан</h5>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4">
+              <div class="col-md-4 col-sm-4 logo">
                 <div class="topHeaderLogo">
                   <div class="thl-wrapper">
-                    <a href="#">
+                    <a href="index.html">
                       <img src="img/logo.png" alt="">
                     </a>
                     <div class="lang">
@@ -70,58 +77,74 @@
                   </div>
                 </div>
                 <div class="topHeaderIcons">
-                  <div class="IconSet">
-                    <a href="#">
-                      <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
-                    </a>
-                  </div>
-                  <div class="IconSet">
-                    <a href="#">
-                      <span class="icon-instagram-logo"></span>
-                    </a>
-                  </div>
-                  <div class="IconSet">
-                    <a href="#">
-                      <span class="icon-telegram"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span>
-                    </a>
-                  </div>
+                  <ul class="IconSet">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="topHeaderBottom container">
-          <ul class="topHeaderList">
-            <li>
-              <a href="#" class="active">Главная</a>
-            </li>              
-            <li>
-              <a href="#">О компании</a>
-            </li>
-            <li>
-              <a href="#">
-                Продукция
-              </a>
-            </li>
-          </ul>
-          <ul class="topHeaderList leftlist">
-            <li>
-              <a href="#">Почему "Олео"</a>
-            </li>
-            <li>
-              <a href="#">Рецепты</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
+        <div class="topHeaderBottom sidebar container wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+          <div class="menu">
+            <ul class="topHeaderList">
+              <li>
+                <a href="index.html" class="active">Главная</a>
+              </li>              
+              <li>
+                <a href="aboutCompany.html">О компании</a>
+              </li>
+              <li>
+                <a href="products.html">Продукция</a>
+              </li>
+            </ul>
+            <ul class="topHeaderList leftlist">
+              <li>
+                <a href="whyOleo.html">Почему "Олео"</a>
+              </li>
+              <li>
+                <a href="recipes.html">Рецепты</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="adaptivelang">
+              <h4>
+                <a href="#" class="active">рус</a>
+              </h4>
+              <h4>
+                <a href="#">узб</a> 
+              </h4>
+            </div>
+            <div class="topHeaderIcons anothericon">
+              <ul class="IconSet">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
         <div class="hdCarousel">
             <div class="owl-carousel owl-theme">
               <div class="hdItem">
                 <img src="img/header_bg1.png" alt="">
-                <div class="hdContent">
+                <div class="hdContent animated fadeIn">
                   <div class="hdContentImg">
                     <img src="img/txtbg.png" alt="">
                   </div>
@@ -131,8 +154,8 @@
                 </div>
               </div>
               <div class="hdItem">
-                <img src="img/header_bg1.png" alt="">
-                <div class="hdContent">
+                <img src="img/header_bg2.jpg" alt="">
+                <div class="hdContent animated fadeIn">
                   <div class="hdContentImg">
                     <img src="img/txtbg.png" alt="">
                   </div>
@@ -157,12 +180,12 @@
                 <h1>Компания "BARAKA FOOD"</h1>
               </div>
               <div class="companyContent">
-                <div class="roundedContent">
+                <div class="roundedContent animated fadeIn">
                   <div class="rondedImg">
                     <img src="img/baraka.png" alt="">
                   </div>
                   <div class="companyItems">
-                    <div class="comp-item produce">
+                    <div class="comp-item produce wow jackInTheBox" data-wow-duration="2s" data-wow-delay="0.2s">
                       <div class="produceImg">
                         <img src="img/pro.png" alt="">
                       </div>
@@ -175,7 +198,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="comp-item offer">
+                    <div class="comp-item offer wow jackInTheBox" data-wow-duration="2s" data-wow-delay="0.4s">
                       <div class="offerImg">
                         <img src="img/offer.png" alt="">
                       </div>
@@ -188,7 +211,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="comp-item pride">
+                    <div class="comp-item pride wow jackInTheBox" data-wow-duration="2s" data-wow-delay="0.6s">
                       <div class="prideImg">
                         <img src="img/prideof.png" alt="">
                       </div>
@@ -204,7 +227,7 @@
                 </div>
 
                 <div class="companyAbout">
-                  <div class="companyAboutContentLeft">
+                  <div class="companyAboutContentLeft wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                     <p>
                       <span>Компания «BARAKA FOOD»</span> создана в 2012 году и занимается производством сливочных масел, растительно-сливочных спредов, маргаринов и топленных масел под торговой маркой «OLEO». 
                     </p>
@@ -212,7 +235,7 @@
                       Широкий ассортимент нашей продукции сочетает в себе функциональность, аромат и текстуру с высокими полезными и питательными ценностями.
                     </p>
                   </div>
-                  <div class="companyAboutContentRight">
+                  <div class="companyAboutContentRight wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
                     <p>
                       Команда профессионалов,  производящих продукцию, закладывает в основу  производства здоровое питание путем ответственного отбора сырья для производства безопасных и качественных  продуктов как с точки зрения здоровья, так и вкуса. 
                     </p>
@@ -235,7 +258,7 @@
               <h1>Наша продукция</h1>
             </div>
             <div class="productsButter">
-              <div class="col-md-6 col-sm-6 butter">
+              <div class="col-md-6 col-sm-6 butter wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="border-wrap">
                   <div class="products-border">
                     <img src="img/creamybutter.png" class="creamy" alt="">
@@ -250,7 +273,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6 margarine">
+              <div class="col-md-6 col-sm-6 margarine wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="border-wrap">
                   <div class="products-border">
                     <img src="img/creamymargarine.png" class="creamy" alt="">
@@ -267,7 +290,7 @@
               <div class="clearfix"></div>              
             </div>
             <div class="productsButter">
-              <div class="col-md-6 col-sm-6 butter">
+              <div class="col-md-6 col-sm-6 butter wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="border-wrap">
                   <div class="products-border">
                     <img src="img/for-dough.png" class="creamy" alt="">
@@ -281,7 +304,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6 margarine">
+              <div class="col-md-6 col-sm-6 margarine wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="border-wrap">
                   <div class="products-border">
                     <img src="img/low-colorie.png" class="creamy" alt="">
@@ -299,7 +322,7 @@
               <div class="clearfix"></div>              
             </div>
             <div class="products-btn">
-              <h4><a href="">Вся продукцию</a></h4>
+              <h4><a href="products.html">Вся продукцию</a></h4>
             </div>
           </div>
         </div>
@@ -318,19 +341,19 @@
               </h5>
             </div>
             <div class="whyContentimg">
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
                 <img src="img/quality.png" alt="whyimg">
                 <h5>Качественное <br> сырье</h5>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
                 <img src="img/natural.png" alt="whyimg">
                 <h5>Натуральный <br> продукт</h5>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
                 <img src="img/vitamins.png" alt="whyimg">
                 <h5>Источник <br> витаминов</h5>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s">
                 <img src="img/taste.png" alt="whyimg">
                 <h5>Безупречный <br> вкус</h5>
               </div>
@@ -349,45 +372,213 @@
 
             <div class="slider-for">
               <div class="cakeRecipe clearfix">
-                <div class="cakeimg">
-                  <img src="img/cake.png" alt="">
-                </div>
-                <div class="cakeborder-wrap">
-                  <div class="border">
-                    <div class="cakeRecipeText">
-                      <div class="cakeRecipeTextContent">
-                        <h1>Кексы на кефире <br> и маргарине “Oleo”</h1>
-                        <h3>
-                          Кексы - вкусная выпечка к чаю или кофе. Приготовить их несложно, используя самые обычные продукты и конечно незаменимый маргарин "OLEO".
-                        </h3>
-                        <h5>Основные ингредиенты:</h5>
-                        <div class="ingredients">
-                          <h6 class="leftIngredient col-md-6 col-sm-6">
-                            Мука - 200 г<br>
-                            Кефир  - 150 мл<br>
-                            Маргарин “Oleo” - 80 г<br>
-                            Сахар - 100 г<br>
-                            Яйцо - 1 шт.<br>
-                          </h6>
-                          <h6 class="rightIngredient col-md-6 col-sm-6">
-                            Соль - небольшая щепотка<br>
-                            Разрыхлитель теста - 2 ч.л.<br>
-                            Цукаты - 50 г<br>
-                            Цедра лимона - 0,5 ч.л.<br>
-                          </h6>
-                        </div>
-                        <div class="products-btn ingredients-btn">
-                          <h4><a href="">Показать полностью</a></h4>
+                <div class="cakeRecipeWrap">
+                  <div class="cakeimg">
+                    <img src="img/cake.png" alt="">
+                  </div>
+                  <div class="cakeborder-wrap">
+                    <div class="border">
+                      <div class="cakeRecipeText">
+                        <div class="cakeRecipeTextContent">
+                          <h1>Кексы на кефире <br> и маргарине “Oleo”</h1>
+                          <div class="cookingTime2">
+                            <h5>Время <br>приготовления</h5>
+                            <h1><span>45</span><br> мин</h1>
+                          </div>
+                          <h3>
+                            Кексы - вкусная выпечка к чаю или кофе. Приготовить их несложно, используя самые обычные продукты и конечно незаменимый маргарин "OLEO".
+                          </h3>
+                          <div class="ingTitle">
+                            <h5>Основные ингредиенты:</h5>
+                            <div class="ingredients">
+                              <h6 class="leftIngredient col-md-6 col-sm-6">
+                                Мука - 200 г<br>
+                                Кефир  - 150 мл<br>
+                                Маргарин “Oleo” - 80 г<br>
+                                Сахар - 100 г<br>
+                                Яйцо - 1 шт.<br>
+                              </h6>
+                              <h6 class="rightIngredient col-md-6 col-sm-6">
+                                Соль - небольшая щепотка<br>
+                                Разрыхлитель теста - 2 ч.л.<br>
+                                Цукаты - 50 г<br>
+                                Цедра лимона - 0,5 ч.л.<br>
+                              </h6>
+                            </div>
+                          </div>
+  
+                          <div class="products-btn ingredients-btn">
+                            <h4><a href="recipes-more-info.html">Показать полностью</a></h4>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="cookingTimeWrap">
+                    <div class="border">
+                      <div class="cookingTime">
+                        <h5>Время <br>приготовления</h5>
+                        <h1><span>45</span><br> мин</h1>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="cookingTimeWrap">
-                  <div class="border">
-                    <div class="cookingTime">
-                      <h5>Время <br>приготовления</h5>
-                      <h1><span>45</span><br> мин</h1>
+              </div>
+              <div class="cakeRecipe clearfix">
+                <div class="cakeRecipeWrap">
+                  <div class="cakeimg">
+                    <img src="img/cake.png" alt="">
+                  </div>
+                  <div class="cakeborder-wrap">
+                    <div class="border">
+                      <div class="cakeRecipeText">
+                        <div class="cakeRecipeTextContent">
+                          <h1>Кексы на кефире <br> и маргарине “Oleo”</h1>
+                          <div class="cookingTime2">
+                            <h5>Время <br>приготовления</h5>
+                            <h1><span>45</span><br> мин</h1>
+                          </div>
+                          <h3>
+                            Кексы - вкусная выпечка к чаю или кофе. Приготовить их несложно, используя самые обычные продукты и конечно незаменимый маргарин "OLEO".
+                          </h3>
+                          <div class="ingTitle">
+                            <h5>Основные ингредиенты:</h5>
+                            <div class="ingredients">
+                              <h6 class="leftIngredient col-md-6 col-sm-6">
+                                Мука - 200 г<br>
+                                Кефир  - 150 мл<br>
+                                Маргарин “Oleo” - 80 г<br>
+                                Сахар - 100 г<br>
+                                Яйцо - 1 шт.<br>
+                              </h6>
+                              <h6 class="rightIngredient col-md-6 col-sm-6">
+                                Соль - небольшая щепотка<br>
+                                Разрыхлитель теста - 2 ч.л.<br>
+                                Цукаты - 50 г<br>
+                                Цедра лимона - 0,5 ч.л.<br>
+                              </h6>
+                            </div>
+                          </div>
+  
+                          <div class="products-btn ingredients-btn">
+                            <h4><a href="recipes-more-info.html">Показать полностью</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cookingTimeWrap">
+                    <div class="border">
+                      <div class="cookingTime">
+                        <h5>Время <br>приготовления</h5>
+                        <h1><span>45</span><br> мин</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cakeRecipe clearfix">
+                <div class="cakeRecipeWrap">
+                  <div class="cakeimg">
+                    <img src="img/cake.png" alt="">
+                  </div>
+                  <div class="cakeborder-wrap">
+                    <div class="border">
+                      <div class="cakeRecipeText">
+                        <div class="cakeRecipeTextContent">
+                          <h1>Кексы на кефире <br> и маргарине “Oleo”</h1>
+                          <div class="cookingTime2">
+                            <h5>Время <br>приготовления</h5>
+                            <h1><span>45</span><br> мин</h1>
+                          </div>
+                          <h3>
+                            Кексы - вкусная выпечка к чаю или кофе. Приготовить их несложно, используя самые обычные продукты и конечно незаменимый маргарин "OLEO".
+                          </h3>
+                          <div class="ingTitle">
+                            <h5>Основные ингредиенты:</h5>
+                            <div class="ingredients">
+                              <h6 class="leftIngredient col-md-6 col-sm-6">
+                                Мука - 200 г<br>
+                                Кефир  - 150 мл<br>
+                                Маргарин “Oleo” - 80 г<br>
+                                Сахар - 100 г<br>
+                                Яйцо - 1 шт.<br>
+                              </h6>
+                              <h6 class="rightIngredient col-md-6 col-sm-6">
+                                Соль - небольшая щепотка<br>
+                                Разрыхлитель теста - 2 ч.л.<br>
+                                Цукаты - 50 г<br>
+                                Цедра лимона - 0,5 ч.л.<br>
+                              </h6>
+                            </div>
+                          </div>
+  
+                          <div class="products-btn ingredients-btn">
+                            <h4><a href="recipes-more-info.html">Показать полностью</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cookingTimeWrap">
+                    <div class="border">
+                      <div class="cookingTime">
+                        <h5>Время <br>приготовления</h5>
+                        <h1><span>45</span><br> мин</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cakeRecipe clearfix">
+                <div class="cakeRecipeWrap">
+                  <div class="cakeimg">
+                    <img src="img/cake.png" alt="">
+                  </div>
+                  <div class="cakeborder-wrap">
+                    <div class="border">
+                      <div class="cakeRecipeText">
+                        <div class="cakeRecipeTextContent">
+                          <h1>Кексы на кефире <br> и маргарине “Oleo”</h1>
+                          <div class="cookingTime2">
+                            <h5>Время <br>приготовления</h5>
+                            <h1><span>45</span><br> мин</h1>
+                          </div>
+                          <h3>
+                            Кексы - вкусная выпечка к чаю или кофе. Приготовить их несложно, используя самые обычные продукты и конечно незаменимый маргарин "OLEO".
+                          </h3>
+                          <div class="ingTitle">
+                            <h5>Основные ингредиенты:</h5>
+                            <div class="ingredients">
+                              <h6 class="leftIngredient col-md-6 col-sm-6">
+                                Мука - 200 г<br>
+                                Кефир  - 150 мл<br>
+                                Маргарин “Oleo” - 80 г<br>
+                                Сахар - 100 г<br>
+                                Яйцо - 1 шт.<br>
+                              </h6>
+                              <h6 class="rightIngredient col-md-6 col-sm-6">
+                                Соль - небольшая щепотка<br>
+                                Разрыхлитель теста - 2 ч.л.<br>
+                                Цукаты - 50 г<br>
+                                Цедра лимона - 0,5 ч.л.<br>
+                              </h6>
+                            </div>
+                          </div>
+  
+                          <div class="products-btn ingredients-btn">
+                            <h4><a href="recipes-more-info.html">Показать полностью</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cookingTimeWrap">
+                    <div class="border">
+                      <div class="cookingTime">
+                        <h5>Время <br>приготовления</h5>
+                        <h1><span>45</span><br> мин</h1>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -396,20 +587,20 @@
 
             <div class="cakeSlider slider-nav">
               <div class="cakeSliderItem">
-                <a href="#"><img src="img/cake1.png" alt=""></a>
+                <img src="img/cake1.png" alt="">
               </div>
               <div class="cakeSliderItem">
-                <a href="#"> <img src="img/cake2.png" alt=""></a>
+                <img src="img/cake2.png" alt="">
               </div>
               <div class="cakeSliderItem">
-                <a href="#"><img src="img/cake3.png" alt=""></a>
+                <img src="img/cake3.png" alt="">
               </div>
               <div class="cakeSliderItem">
-                <a href="#"><img src="img/cake1.png" alt=""></a>
+                <img src="img/cake1.png" alt="">
               </div>
             </div>
             <div class="products-btn allRecipes">
-              <h4><a href="#">все рецепты</a></h4>
+              <h4><a href="recipes.html">все рецепты</a></h4>
             </div>
           </div>
         </div>
@@ -445,7 +636,7 @@
                       <img src="img/quotes.png" alt="">
                     </div>
                     <h4>
-                      Хорошее масло! В составе масел "OLEO" <br> натуральные ингредиенты. Получается великолепная выпечка! <br>  
+                      Хорошее масло! В составе масел "OLEO" натуральные ингредиенты. Получается великолепная выпечка! 
                       Были очень рады сотрудничать с вами! Успехов!
                     </h4>
                   </div>
@@ -460,7 +651,7 @@
                       <img src="img/quotes.png" alt="">
                     </div>
                     <h4>
-                      Хорошее масло! В составе масел "OLEO" <br> натуральные ингредиенты. Получается великолепная выпечка! <br>  
+                      Хорошее масло! В составе масел "OLEO" натуральные ингредиенты. Получается великолепная выпечка!  
                       Были очень рады сотрудничать с вами! Успехов!
                     </h4>
                   </div>
@@ -481,31 +672,40 @@
           <div class="row">
             <div class="footerList">
               <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#">Почему "Олео"</a></li>
-                <li><a href="#">Рецепты</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="aboutCompany.html">О компании</a></li>
+                <li><a href="products.html">Продукция</a></li>
+                <li><a href="whyOleo.html">Почему "Олео"</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
               </ul>
             </div>
             <div class="footerAddress">
-                <div class="topHeaderAddress companyFootaddress">
-                  <div class="topHeaderAddressMapIcon companyFooticon">
-                    <img src="img/map.png" alt="">
-                  </div>
-                  <div class="topHeaderAddresses companyFootadd">
-                    <h5>ул. Фазилтепа 11, Ташкент, Узбекистан</h5>
+                <div class="companyFootaddress col-md-4 col-sm-4">
+                  <div class="leftAdd">
+                    <div class="topHeaderAddressMapIcon companyFooticon">
+                      <img src="img/map.png" alt="">
+                    </div>
+                    <div class="topHeaderAddresses companyFootadd">
+                      <h5>ул. Фазилтепа 11, Ташкент, Узбекистан</h5>
+                    </div>
                   </div>
                 </div>
-              <div class="sailDepartmentLeft">
+              <div class="sailDepartmentLeft companyFootLeft col-md-4 col-sm-4">
+                <div class="leftPhone">
                   <div class="sailDepartmentPhoneIcon companyFooticon">
                     <img src="img/phone.png" alt="">
                   </div>
                   <div class="sailDepartmentSailing companyFootphone">
-                    <h5>+998 90 136 00 30</h5>
+                    <h5><a href="tel:+998 90 136 00 30">+998 90 136 00 30</a></h5>
                   </div>
                 </div>
+              </div>
+              <div class="siteDevelopment col-md-4 col-sm-4">
+                <h4>Разработка сайта: 
+                  <a href="https://osg.uz/">Online Service Group</a>
+                </h4>
+              </div>
             </div>
           </div>
         </div>
@@ -523,13 +723,15 @@
   <!-- owl-carousel -->
   <script>
     $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
+     var owl = $(".owl-carousel").owlCarousel({
         loop:true,
         items:1,
         nav: true,
         dots: true,
         navText: ["<i class='fa fa-chevron-left' aria-hidden='true'></i>","<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
-        // autoplay: 2000,
+        autoplay: 2000,
+        animateOut: 'fadeOutLeft',
+        animateIn: 'fadeInRight',
         responsive:{
         500:{
           mouseDrag:false,
@@ -540,24 +742,23 @@
           touchDrag:false,
         },
         }
-      });
+      });  
     });
   </script>
-  <!-- <img src="img/left-arrow-angle.svg" alt="">
-  <img src="img/right-arrow-angle.svg" alt=""> -->
   <!-- slick -->
   <script src="js/slick.min.js"></script>
 
   <script>
     $(document).ready(function(){
-      // $('.slider-for').slick({
-      //   slidesToShow: 1,
-      //   slidesToScroll: 1,
-      //   arrows: false,
-      //   fade: true,
-      //   asNavFor: '.slider-nav'
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        speed: 500,
+        fade: true,
+        asNavFor: '.slider-nav'
         
-      // });
+      });
 
       $('.slider-nav').slick({
         slidesToShow: 3,
@@ -566,22 +767,32 @@
         prevArrow: ('<img src="img/left-arrow-angle.svg" alt="" class="left-arrow" >'),
         nextArrow: ('<img src="img/right-arrow-angle.svg" alt="" class="right-arrow" >'),
         centerMode:true,
-        centerPadding: "20px",
-        // focusOnSelect: true,
-        // asNavFor: '.slider-for',
-        autoplay: true,
-        autoplaySpeed: 3000,
-        // responsive: [
-        //   {
-        //   breakpoint: 768,
-        //   settings: {
-        //     slidesToShow: 2,
-        //     slidesToScroll: 3,
-        //     infinite: true,
-        //     dots: false
-        //   }
-        // }
-        // ]
+        centerPadding: "15px",
+        focusOnSelect: true,
+        asNavFor: '.slider-for',
+        // autoplay: true,
+        // autoplaySpeed: 5000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 495,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          }
+        
+        ]
       });
     });
 
@@ -594,12 +805,58 @@
         infinite: true,
         dots: true,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        }
+        ]
       });
     });
   </script>
-  <!-- <script src="js/wow.min.js"></script>
+  <script>
+
+    $(function() {
+      var menuToggler = $('.menu-icon'),
+        menu = $('.sidebar'),
+        menubg = $('.menuCanvas'),
+        exit = $('#exitmnu');
+      
+      menuToggler.click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        $(this).toggleClass('active');
+        menu.toggleClass('active');
+        menubg.toggleClass('active');
+        exit.toggleClass('active');
+      });
+
+      menu.click(function(e) {
+        e.stopPropagation();
+      });
+
+      $(document).click(function(e) {
+        if( !menu.has(e.target).length ) {
+          menu.removeClass('active');
+          menuToggler.removeClass('active');
+          menubg.removeClass('active');
+          exit.removeClass('active');
+        }
+      });
+    });
+  </script>
+  <script src="js/slick-animate.js"></script>  
+  <script src="js/wow.min.js"></script>
   <script>
       new WOW().init();
-  </script> -->
+  </script>
 </body>
 </html>

@@ -12,10 +12,10 @@
 body{
 	font-family: "OpenSans-Regular";
   color: #111;
-  height: 650px;
+  /* height: 650px; */
 }
 
-.clearfix{
+.clearfix::after{
   content: '';
   display: table;
   clear: both;
@@ -60,10 +60,10 @@ body{
 .topHeaderAddressMapIcon{
   margin-top: 10px;
   float: left;
-  /* margin-right: 10px; */
+  margin-right: 7px;
 }
 .topHeaderAddresses{
-  float: right;
+  float: none;
 }
 .topHeaderLogo{
   margin: 0 auto;
@@ -76,6 +76,9 @@ body{
   border-radius: 50%;
   width: 355px;
   height: 320px;
+  -webkit-box-shadow: 0px 18px 13px -16px rgba(61, 51, 61, 0.58);
+  -moz-box-shadow: 0px 18px 13px -16px rgba(61, 51, 61, 0.58);
+  box-shadow: 0px 18px 13px -16px rgba(61, 51, 61, 0.58);
 }
 .thl-wrapper {
   display: block;
@@ -104,8 +107,28 @@ body{
   color: #3157a3;
   display: inline-block;
 }
+.adaptivelang {
+  margin: 5px 0 10px 0;
+  display: none;
+}
+.adaptivelang a {
+  margin-right: 10px;
+  color: #f9f9f9;
+}
+.adaptivelang a.active,.lang a:hover {
+  color: #ffc80a;
+  text-decoration: none;
+}
+.adaptivelang h4 {
+  font-size: 16px;
+  font-family: 'OpenSans-SemiBold'; 
+  text-transform: uppercase; 
+  color: #3157a3;
+  display: inline-block;
+}
 .sailDepartmentLeft {
   display: inline-block;
+  text-align: center;
 }
 .sailDepartment{
   float: right;
@@ -135,6 +158,31 @@ body{
 .IconSet{
   display: inline-block;
   margin: 15px 4px;
+}
+ul.IconSet li a {
+  border: 1px solid #ccc;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  color: #23527c;
+}
+ul.IconSet li:first-child {
+  display: inline-block;
+  margin-left: 0;
+}
+ul.IconSet li a i {
+  margin-top: 7px;
+}
+ul.IconSet li a:hover {
+  background: #0056a6;
+  color: #fff;
+}
+ul.IconSet li {
+  display: inline-block;
+  margin-left: 15px;
 }
 .topHeaderBottom{
   background: url(../img/treeBg.png) no-repeat;
@@ -298,6 +346,10 @@ section.companyOleo{
   position: relative;
   margin-bottom: 40px;
 }
+section.aboutcompanyOleo{
+  position: relative;
+  margin-bottom: 0;
+}
 .companyTitle h1{
   text-align: center;
   color: #111;
@@ -311,6 +363,15 @@ section.companyOleo{
   background-repeat: no-repeat;
   /* height: 72em; */
   margin-top: -10rem;
+  position: relative;
+  z-index: 10;
+}
+.aboutCompanyBg {
+  background: url(../img/companybg.png) no-repeat bottom center/cover;
+  background-size: 100%;
+  background-color: #fff;
+  padding: 9em 0 25em 0;
+  margin-top: 0rem;
   position: relative;
   z-index: 10;
 }
@@ -404,19 +465,26 @@ section.companyOleo{
   width: 45%;
 }
 /*/// OURPRODUCTS ///*/
+
+
 section.OurProducts{
   background: url('../img/products_bg.png') no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .productsTitle h1{
   color: #fff;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .border-wrap {
   background: #fff;
   padding: 5px;
   border-radius: 10px;
+  float: left;
+}
+.productsborder-wrap {
   float: left;
 }
 .products-border {
@@ -428,6 +496,9 @@ section.OurProducts{
   background: #fbc22b61;
   transition: .5s;
 }
+/* .products-border img {
+  width: 100%;
+} */
 img.creamy {
   padding: 5px;
 }
@@ -439,6 +510,7 @@ img.creamy {
   margin-left: 16px;
   width: 230px;
 }
+
 .butterContent h4{
   font-family: 'OpenSans-Bold';
   font-size: 20px;
@@ -465,12 +537,14 @@ img.creamy {
   border-top: 1px solid #fff;
   padding-top: 15px;
 }
+
 .products-btn a{
   padding: 19px 40px;
   text-decoration: none;
   color: #111;
   background: #ffc80a;
   border-radius: 40px;
+  display: inline-block;
 }
 .products-btn a:hover{
   background: #ffca0aa2;
@@ -483,8 +557,15 @@ img.creamy {
   margin: 0 auto;
   margin-bottom: 45px;
 }
-
+.products-btn a:focus {
+  outline: none;
+}
 /* /// WHY? /// */
+.whyOleo {
+  background: url(../img/whyBg.png) no-repeat top center/cover;
+  padding: 4em 0;
+  background-color: #fff;
+}
 .whyTitle h1{
   font-family: 'OpenSans-Bold';
   font-size: 30px;
@@ -502,6 +583,9 @@ img.creamy {
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
+}
+.whyContentimg img {
+  width: 100%;
 }
 .whyContentimg h5{
   text-align: center;
@@ -526,21 +610,26 @@ img.creamy {
   margin-bottom: 70px;
   position: relative;
 }
+.cakeRecipeWrap{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: stretch
+}
 .cakeimg {
   float: left;
   width: 48%;
-  height: 502px;
+  /* height: 502px; */
   /* overflow: hidden; */
   display: block;
 }
 .cakeimg img{
   width: auto;
-  min-width: 100%;
-  min-height: auto;
+  height: auto;
 }
 .cakeborder-wrap {
   background: #fff;
-  min-height: 556px;
+  /* min-height: 556px; */
   width: 52%;
   float: left;
   border-radius: 0 12px 12px 0;
@@ -555,7 +644,7 @@ img.creamy {
 /* .cakeRecipeText {
 } */
 .cakeRecipeTextContent{
-  margin: 35px 0 0 25px;
+  padding-left: 25px;
   color: #333;
   font-family: 'OpenSans-Regular';
 }
@@ -589,7 +678,7 @@ img.creamy {
   border-radius:10px; 
   position: absolute;
   top: -11%;
-  right: -5%;
+  right: 83%;
   -webkit-box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
   -moz-box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
   box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
@@ -637,7 +726,7 @@ h6.rightIngredient{
 .ingredients-btn {
   text-align: inherit;
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
 }
 .cakeSlider{
   text-align: center;
@@ -654,6 +743,10 @@ h6.rightIngredient{
   border-radius: 50%;
   transition: .5s
 }
+.slider-for>.slick-list.draggable {
+  padding: 5% 5% 0 5%;
+}
+
 /* .cakeSliderItem.slick-current img{
   border: 4px solid #FBC329;
   border-radius: 50%;
@@ -679,6 +772,7 @@ img.left-arrow.slick-arrow{
   left: -40px;
 }
 .slick-slide img {
+  cursor: pointer;
   display: block;
   margin: 0 auto;
 }
@@ -750,10 +844,11 @@ img.left-arrow.slick-arrow{
 }
 /* /// Footer /// */
 .footerAddress {
+  overflow: hidden;
   margin: 25px 0 25px 0;
 }
 .oleoFoot{
-  background: #dcdcdc
+  background: #f1f1f1
 }
 .footerList{
   margin-top: 35px;
@@ -777,13 +872,422 @@ img.left-arrow.slick-arrow{
   font-size: 16px;
 }
 .footerList ul li a:hover {
-  color: #fff;
+  color: #0056a7;
 }
 .companyFooticon {
+  float: none;
   vertical-align: 4px;
   margin-right: 10px;
   margin-top: 0;
+  display: inline-block;
 }
 .companyFootaddress{
-  margin-right: 65px;
+  /* margin-right: 65px; */
+  display: inline-block;
+  text-align: center;
+}
+.companyFootadd h5 {
+  font-size: 16px;
+}
+.companyFootphone h5{
+  font-size: 16px;
+}
+.companyFootphone h5 a {
+  color: #333;
+}
+.siteDevelopment h4{
+  font-size: 17px;
+}
+.siteDevelopment a{
+  color: #194D9C;
+}
+.siteDevelopment a:hover{
+  color: #0056a7;
+}
+.menu-icon{
+  /* position: absolute; */
+  /* bottom: 10px; */
+  /* left: 0; */
+  float: left;
+  /* right: 0; */
+  width: 30px;
+  height: 30px;
+  padding: 0px 6px;
+  background: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+}
+.menu-icon span{
+	width: 100%;
+  height: 2px;
+  display: block;
+  background: #333;
+  margin: 4px 0;
+  transition: .5s;
+}
+/* .menu-icon.active span{
+	position: absolute;
+	width: calc(100% - 12px);
+	top: calc(50% - 8px);
+} */
+.menu-icon.active span:nth-child(1){
+	transform: rotate(45deg)
+}
+.menu-icon.active span:nth-child(3){
+	transform: rotate(135deg)
+}
+.menu-icon.active span:nth-child(2){
+	display: none;
+}
+.menu-icon p {
+  position: absolute;
+  color: #333;
+  text-transform: uppercase;
+  top: 0.1em;
+  left: 2em;
+}
+.menuCanvas.active{
+  overflow: hidden;
+}
+#exitmnu.active{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  z-index: 1001;
+}
+#exitmnu{
+  display: none;
+}
+i.fa.fa-times {
+  font-size: 30px;
+  color: #ffc80a;
+}
+.menuCanvas.active::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.65);
+  z-index: 1000;
+}
+
+/* /// ProductsLinkPage  /// */
+.mainProducts{
+  color: #333;
+}
+.mainproductsButter {
+  margin-top: 25px;
+  overflow: hidden;
+  border-bottom: 1px solid #8c6d4c;
+}
+.mainproducts-border {
+  border: 1px dashed #8c6d4c;
+  border-radius: 10px;
+  padding: 50px 35px 40px 35px;
+}
+.mainproducts-border img{
+  width: 100%;
+}
+section.productsBg{
+  background: url(../img/productsBg.png) no-repeat top center/cover;
+  padding: 4em 0;
+  background-color: #fff;
+}
+.mainProductsTitle h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'OpenSans-Bold';
+}
+.mainbutterContent{
+  width: 100%;
+  float: left;
+  margin-left: 5px;
+}
+.mainbutterContent h4{
+  font-family: 'OpenSans-Bold';
+  font-size: 20px;
+  width: 100%;
+  margin-top: 0;
+}
+.mainbutterContent h5 {
+  font-family: 'OpenSans-Bold';
+  font-size: 17px;
+  color: #033333;
+  background: #ffc80a;
+  border-radius: 10px;
+  width: 75px;
+  padding: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.mainbutterContent h6 {
+  font-family: 'OpenSans-Regular';
+  font-size: 19px;
+}
+.mainbutterContent p {
+  font-family: 'OpenSans-Regular';
+  font-size: 19px;
+  border-top: none;
+  padding-bottom: 40px;
+  width: 100%;
+  padding-top: 15px;
+}
+/* /// RecipeLinkPage  /// */
+.recipesTitlepage{
+  text-align: center;
+  color: #333;
+  font-family: 'OpenSans-Bold';
+  margin: 80px 0 70px 0;
+}
+.recipesTitlepage h1{
+  font-size: 30px;
+}
+.recipespage{
+  background: url(../img/recipeBg1.png) no-repeat top center/cover;
+  background-color: #ffffff;
+  padding: 4em 0;
+}
+.cakeRecipepage {
+  margin-bottom: 105px;
+}
+.cookingTimeWrappage {
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: -6%;
+  right: 6%;
+  -webkit-box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
+  box-shadow: -1px 3px 36px -2px rgba(0, 0, 0, 0.48);
+  text-align: center;
+  padding: 5px;
+  z-index: 1;
+}
+.cakeimgpage img{
+  width: 320px;
+  height: 260px;
+  border-radius: 10px;
+    /* height: auto; */
+    /* width: 100%; */
+}
+.cakeRecipeTextContentpage {
+  /* margin: 35px 0 0 25px; */
+  color: #333;
+  font-family: 'OpenSans-Regular';
+}
+.cakeRecipeTextContentpage h1 {
+  color: #333;
+  font-family: 'OpenSans-Bold';
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+.cakeRecipeTextContentpage h3 {
+  /* width: 72%; */
+  font-size: 20px;
+  border-top: 1px solid #333;
+  margin-top: 5px;
+  padding-top: 16px;
+}
+.cakeRecipeTextContentpage h5 {
+  color: #3157a3;
+  font-family: 'OpenSans-Semibold';
+  font-size: 20px;
+  margin-top: 23px;
+}
+.ingredientspage {
+  overflow: hidden;
+}
+.ingredientspage h6 {
+  font-family: 'OpenSans-Regular';
+  font-size: 20px;
+  margin-top: 0;
+  line-height: 1.3;
+  padding-left: 0;
+}
+h6.rightIngredient {
+  line-height: 1.5;
+  /* width: 55%; */
+}
+.cookingTimepage {
+  padding: 0 10px;
+}
+.cookingTimepage h5 {
+  font-family: 'OpenSans-Bold';
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1;
+}
+.cookingTimepage h1 {
+  font-family: 'OpenSans-Bold';
+  color: #3157a3;
+  line-height: 1;
+  font-size: 12px;
+  margin-top: 1px;
+}
+.cookingTimepage span {
+  font-family: 'OpenSans-Light';
+  font-size: 50px;
+  margin: 0;
+}
+.recipes-btn{
+  margin-top: 45px;
+  margin-bottom: 0;
+  display: block;
+  /* text-align: center; */
+}
+
+/* ///  CooKMoreInfo  /// */
+.cakeimgmore {
+  position: relative;
+}
+.cakeimgmore img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.cookingTimeWrapMoreInfo{
+  top: 6%;
+  right: 3%;
+}
+.cakeRecipeTextMoreInfo h1 {
+  margin: 55px 0 25px 0;
+}
+.cakeRecipeTextMoreInfo h3 {
+  margin-bottom: 30px;
+}
+.cakeRecipeTextMoreInfo h5 {
+  margin-bottom: 20px;
+}
+.ingredientsMoreInfo p {
+  font-size: 20px;
+  line-height: 1;
+}
+.cookingProcessText p{
+  font-size: 20px;
+}
+.cookAdvice{
+  border-radius: 10px;
+  background: #e8d7c4;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.cookAdvice img {
+  float: left;
+  margin: 20px 0 0 20px;
+}
+.cookAdviceText{
+  float: left;
+  margin-left: 20px;
+  width: 80%;
+}
+.cookAdviceText h1 {
+  margin: 35px 0 20px 0;
+}
+.cookAdviceText p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.more-btn {
+  margin: 50px;
+  display: block;
+}
+
+/* /// Contacts /// */
+.Contacts {
+  background: url(../img/whyBg.png) no-repeat top center/cover;
+  padding: 4em 0;
+  background-color: #fff;
+}
+.contactsTitle h1{
+  font-family: 'OpenSans-Bold';
+  font-size: 30px;
+  color: #333333;
+  text-align: center;
+  margin: 70px 0 50px 0;
+}
+.contactAdress{
+  margin-bottom: 50px;
+}
+.contactsAndAdd h4{
+  margin-bottom: 20px;
+  color: #3157a3;
+  font-family: "OpenSans-Bold";
+  font-size: 19px;
+  line-height: 0.7;
+}
+.contactsAndAdd h5{
+  line-height: 0.7;
+  font-size: 19px;
+  font-family: "OpenSans-Regular";
+  color: #333;
+}
+.contactForms form input {
+  /* border: none; */
+  outline: none;
+  font-size: 18px;
+}
+input.sign-name {
+  background: url(../img/person-ico.png) no-repeat 20px 14px;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  width: 235px;
+  padding: 10px 0 10px 50px;
+  margin: 0 10px 5px 0;
+}
+input.sign-email {
+  background: url(../img/sms-ico.png) no-repeat 15px 14px;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  width: 235px;
+  padding: 10px 0 10px 50px;
+  margin: 0 10px 5px 0;
+}
+input.sign-sms {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  border-radius: 6px;
+  width: 480px;
+  padding: 20px 0 90px 25px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #333333;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #333333;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #333333;
+}
+.products-btn.contact-btn {
+  text-align: left;
+  display: inline-block;
+  margin-top: 40px;
+}
+#map{
+  height: 400px;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 6px 54px -9px rgba(114, 93, 93, 0.75);
+  -moz-box-shadow: 0px 6px 54px -9px rgba(114, 93, 93, 0.75);
+  box-shadow: 0px 6px 54px -9px rgba(114, 93, 93, 0.75);
+  margin-bottom: 50px;
+}  
+.cookingTime2{
+  display: none;
+}
+.topHeaderAddresses.companyFootadd {
+  float: right;
 }
